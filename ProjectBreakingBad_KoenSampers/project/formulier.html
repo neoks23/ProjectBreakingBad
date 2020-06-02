@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guestbook</title>
+        <link rel="stylesheet" href="CSS/styletv.css">
+        <script src="JS/javascripttv.js"></script>
+    </head>
+    <body>  
+        <nav>
+            <ul>
+                <li><a href="index.html" class="robotobig">home</a></li>
+                <li><a href="geschiedenis.html" class="robotobig">history</a></li>
+                <li><a href="character.html" class="robotobig">characters</a></li>
+                <li><a href="emmy.html" class="robotobig">awards</a></li>
+                <li><a href="galerij.html" class="robotobig">gallery</a></li>
+                <li><a href="episodes.html" class="robotobig">episodes</a></li>
+                <li id="active"><a href="formulier.html" class="robotobig">guestbook <br>and<br> contact</a></li>
+            </ul>
+        </nav>
+        <section class="background" id="backgroundheightform">
+            <p id="titleform" class="robotobig">On this page you can find a geustbook form and a contact button<br>Which leads you to the contact form page.</p>
+            <fieldset class="robotosmall form">
+                <form action="/action_page.php" method="get"><br>
+                <legend><h1>Guestbook</h1></legend>
+                <field>
+                    <br>
+                    First name:<br><input required type="text" id="fname" name="fname" placeholder="fname"><br>
+                    Last name:<br><input required type="text" id="sname" name="sname" placeholder="sname"><br><br>
+                </field>
+                <label for="gender">Gender: </label><br>
+                Man <input type="radio" name="gender" value="M">
+                Vrouw <input type="radio" name="gender" value="V"><br><br>
+                <label for="datum">Date of birth: </label><br>
+                <input required type="date" name="datum" id="datum"><br><br>
+
+                Email:<br>
+                <input required type="email" id="E-mail" name="email" placeholder="E-mail"><br><br>
+                
+                <label for="bekeken">Have you known about the series before?</label><br>
+                Yes <input type="radio" name="bekeken" value="ja">
+                No <input type="radio" name="bekeken" value="nee"><br><br>
+
+                <label for="characters">Who are your favourite characters of <i>breaking bad</i>?</label><br>
+                Walter White <input type="checkbox" name="bekeken" value="walter"><br>
+                Jesse Pinkman <input type="checkbox" name="bekeken" value="jesse"><br>
+                Skyler White <input type="checkbox" name="bekeken" value="skyler"><br>
+                <a href="http://www.savewalterwhite.com/">Walter Jr.</a> <input type="checkbox" name="bekeken" value="walterjr"><br>
+                Marie Shrader <input type="checkbox" name="bekeken" value="marie"><br>
+                Hank Schrader <input type="checkbox" name="bekeken" value="hank"><br>
+                Tuco Salamanca <input type="checkbox" name="bekeken" value="tuco"><br>
+                Hector Salamanca <input type="checkbox" name="bekeken" value="hector"><br>
+                Saul Goodman <input type="checkbox" name="bekeken" value="saul"><br>
+                Mike Ehrmantraut <input type="checkbox" name="bekeken" value="mike"><br>
+                Gus Fring <input type="checkbox" name="bekeken" value="gus"><br>
+                The cousins <input type="checkbox" name="bekeken" value="cousins"><br>
+                <p>additional:</p>
+                <textarea style="resize: none;"value="overig"></textarea><br><br>
+                <label for="ranking">What rating would you give the series <i>Breaking bad?</i></label><br>
+                <input list="ranking" name="ranking">
+                <datalist id="ranking">
+                    <option value="Five stars!">
+                    <option value="Nice!">
+                    <option value="Not bad">
+                    <option value="Not satisfied">
+                    <option value="Poor">
+                  </datalist>
+                <br><br>
+                <input class="button"type="submit" value="submit">
+                <input class="button"type="reset" value="cancel">  
+            </fieldset>
+            <form>
+                <input id="button3" class="button3" type="button" onclick="window.location.href ='contact.html'" value="contact">
+            </form>
+            <footer class="robotobig">
+                <a href="#top"><img src="../project/Media/Images/gallery/twitter.png" alt="x"></a>
+                <a href="#top"><img src="../project/Media/Images/gallery/youtube.png" alt="x"></a>
+                <a href="#top"><img src="../project/Media/Images/gallery/facebook.png" alt="x"></a>
+                <p>copyright © 2020 made by: Koen Sampers All rights reserved.</p>
+            </footer>
+        </section>
+        <section class="imagesize image1"></section>
+        <section class="imagesize image2"></section>
+        <section class="imagesize image3"></section>
+    </body>
+</html>
